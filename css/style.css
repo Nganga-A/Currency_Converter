@@ -78,3 +78,27 @@ html, body {
 /* .base, .target {
     flex-grow: 1;
 } */
+
+.input-amount{
+    font-weight: bold;
+}
+
+.converted-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:8px 4px;
+    max-width:100%;
+    overflow: auto;
+    background-color: rgb(247, 247, 247);
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.converted-container .converted{
+    font-size: 3.2em;
+    margin: 0px;
+    font-family: 'Gabarito', sans-serif;
+    color: rgb(68, 68, 68);
+}
