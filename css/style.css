@@ -102,3 +102,135 @@ html, body {
     font-family: 'Gabarito', sans-serif;
     color: rgb(68, 68, 68);
 }
+
+/* Desktops - Higher resolution */
+@media (min-width: 1281px) {
+    /* Two-column layout with grid for larger screens */
+    .headline-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+    }
+}
+
+/* Laptops, Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Single-column layout with reduced font size for medium-sized screens */
+    .headline-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 32px;
+    }
+
+    /* Adjust max-width for input and converted containers */
+    .input-container, .converted-container {
+        max-width: 680px;
+    }
+
+    /* Increase font size for headlines */
+    .headline-container .headline-content .headline {
+        font-size: 4.8em;
+    }
+}
+
+/* Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Single-column layout for tablets in portrait mode */
+    .headline-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 32px;
+    }
+
+    /* Adjust layout for currency container in main content */
+    .headline-container .main-content .currency-container {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        width: 100%;
+    }
+
+    /* Increase font size for headlines */
+    .headline-container .headline-content .headline {
+        font-size: 4.8em;
+    }
+}
+
+/* Tablets (Landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Single-column layout for tablets in landscape mode */
+    .headline-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 32px;
+    }
+
+    /* Adjust layout for currency container in main content */
+    .headline-container .main-content .currency-container {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        width: 100%;
+    }
+
+    /* Decrease font size for headlines in landscape mode */
+    .headline-container .headline-content .headline {
+        font-size: 4.2em;
+    }
+}
+
+/* Low-resolution Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Single-column layout for smaller screens with adjusted font size */
+    .headline-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 32px;
+    }
+
+    /* Decrease font size for headlines */
+    .headline-container .headline-content .headline {
+        font-size: 4.2em;
+    }
+
+    /* Adjust layout for currency container in main content */
+    .headline-container .main-content .currency-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    /* Decrease font size for converted text */
+    .converted-container .converted {
+        font-size: 2em;
+    }
+}
+
+/* Smartphones, Mobiles (Portrait) */
+@media (max-width: 480px) {
+    /* Single-column layout for small screens with adjusted font size */
+    .headline-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 32px;
+    }
+
+    /* Decrease font size for headlines */
+    .headline-container .headline-content .headline {
+        font-size: 3.6em;
+    }
+
+    /* Adjust layout for currency container in main content */
+    .headline-container .main-content .currency-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    /* Decrease font size for converted text */
+    .converted-container .converted {
+        font-size: 1.5em;
+    }
+}
