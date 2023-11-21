@@ -53,3 +53,28 @@ html, body {
     text-transform: capitalize;
     font-family: 'Work Sans', sans-serif;
 }
+
+.headline-container .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline-container .main-content {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.headline-container .main-content .input-container {
+    width: 100%;
+}
+
+.headline-container .main-content .currency-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+/* .base, .target {
+    flex-grow: 1;
+} */
