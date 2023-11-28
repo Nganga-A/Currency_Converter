@@ -5,6 +5,12 @@ convertedAmountSection = document.getElementById('converted')
 conversion_rates = {}
 
 
+// Explicitly call updateConvertedCurrency after the page loads
+document.addEventListener('DOMContentLoaded', (e) => {
+    handleBaseCurrencyUpdate();
+}, true);
+
+
 /**
  * Handle update to base currency selected. Updates conversion rates by
  * requesting conversion rates matching the base currency selected.
