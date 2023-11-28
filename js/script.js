@@ -37,10 +37,8 @@ function handleBaseCurrencyUpdate() {
  * display of the converted amount.
  */
 function updateConvertedCurrency() {
-    amount = document.getElementById('amount').value == '' ? 0 : parseFloat(document.getElementById('amount').value);
-    currencyAmountInput = amount;
-
-       //If the value is empty, it defaults to 0.
+    targetCode = document.getElementById('target-currencies').value
+    amount = currencyAmountInput = document.getElementById('amount').value == '' ? 0 : currencyAmountInput = document.getElementById('amount').value   //If the value is empty, it defaults to 0.
     convertedAmount = amount * (conversion_rates[targetCode] ?? 0) //convert the amount
 
     convertedAmountSection.innerText = new Intl.NumberFormat("en-US", {
