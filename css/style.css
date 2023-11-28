@@ -1,6 +1,8 @@
 html, body {
     position: relative;
     height: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .main-container {
@@ -94,7 +96,7 @@ html, body {
     padding:8px 4px;
     max-width:100%;
     overflow: auto;
-    background-color: rgb(190, 240, 198);
+    background-color: rgb(200, 243, 208);
     border-radius: 6px;
     width: 100%;
     text-align: center;
